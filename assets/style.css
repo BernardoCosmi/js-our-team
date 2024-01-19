@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.card{
+    font-weight: bolder;
+    text-align: left;
+    color: black;
+    padding: 20px;
+    width: calc(90vw/3);
+}
+#container{
+    margin-left: 50px;
+    width: fit-content;
+    padding: 5px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

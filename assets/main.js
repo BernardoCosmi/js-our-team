@@ -32,3 +32,17 @@ const teamMembers = [
     },
 ];
 console.log(teamMembers);
+
+//ANCHOR stampa delle info su console
+teamMembers.forEach((membro)=>{
+    console.log(`Nome: ${membro.nome} \nRuolo: ${membro.ruolo} \nFoto: ${membro.foto}`)
+})
+
+//ANCHOR stampa delle info sul DOM
+const containerHTML = document.getElementById("container");
+
+teamMembers.forEach((membro) => {
+    const memberDivHTML = document.createElement("div");
+    memberDivHTML.innerHTML = `<p class="card">Nome: ${membro.nome} <br> Ruolo: ${membro.ruolo} <br> Foto: ${membro.foto}</p>`;
+    containerHTML.appendChild(memberDivHTML);
+});
