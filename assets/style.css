@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+ body{
+    background-color: lightgrey;
+    padding: 10px
+ }
 
 .card{
     font-weight: bolder;
     text-align: left;
     color: black;
     padding: 20px;
-    width: calc(90vw/3);
+    width: calc(100vw/4);
+    font-size: larger;
+    margin-bottom: 20px;
 }
 #container{
     margin-left: 50px;
@@ -19,4 +25,10 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: space-around;
+
+}
+.card img {
+    max-width: 100%;
+    margin-bottom: 25px;
+    height: auto;
 }
